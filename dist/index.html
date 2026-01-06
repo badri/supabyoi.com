@@ -7,150 +7,160 @@
   <meta name="description" content="$25/month. Unlimited Supabase instances. You bring the VM, we handle upgrades, backups, and support.">
   <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-supa-dark text-gray-100 min-h-screen">
+<body class="bg-white text-gray-900 min-h-screen">
 
   <!-- Header -->
-  <header class="max-w-3xl mx-auto px-6 py-8">
-    <div class="flex items-center justify-between">
-      <span class="text-xl font-bold text-supa-green">supabyoi</span>
-      <a href="#pricing" class="text-sm text-gray-400 hover:text-white">Pricing</a>
-    </div>
+  <header class="max-w-4xl mx-auto px-6 py-6">
+    <nav class="flex items-center justify-between">
+      <span class="text-xl font-bold">supabyoi</span>
+      <div class="flex items-center gap-6 text-base">
+        <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
+        <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
+        <a href="#waitlist" class="bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-600 transition">Join Beta</a>
+      </div>
+    </nav>
   </header>
 
   <!-- Hero -->
-  <main class="max-w-3xl mx-auto px-6 py-16">
-    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+  <main class="max-w-4xl mx-auto px-6 py-20">
+    <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-8">
       Self-hosted Supabase.<br>
-      <span class="text-supa-green">Without the headaches.</span>
+      <span class="text-emerald-500">Without the headaches.</span>
     </h1>
 
-    <p class="text-xl text-gray-400 mb-8 max-w-2xl">
+    <p class="text-2xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
       You bring your VPS. We deploy Supabase, handle upgrades, run backups, and support you when things break.
     </p>
 
-    <p class="text-3xl font-bold mb-2">$25/month. Unlimited instances.</p>
-    <p class="text-gray-500 mb-8">No per-project fees. Ever.</p>
+    <div class="mb-10">
+      <p class="text-4xl font-bold mb-2">$25/month</p>
+      <p class="text-xl text-gray-500">Unlimited instances. No per-project fees.</p>
+    </div>
 
-    <a href="#waitlist" class="inline-block bg-supa-green text-black font-semibold px-8 py-3 rounded hover:bg-green-400 transition">
+    <a href="#waitlist" class="inline-block bg-emerald-500 text-white text-lg font-semibold px-8 py-4 rounded hover:bg-emerald-600 transition">
       Join the beta
     </a>
   </main>
 
   <!-- Problem -->
-  <section class="max-w-3xl mx-auto px-6 py-16 border-t border-gray-800">
-    <h2 class="text-2xl font-bold mb-6">The problem</h2>
+  <section class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
+    <h2 class="text-4xl font-bold mb-10">The problem</h2>
 
-    <div class="space-y-4 text-gray-400">
-      <p>Supabase Cloud charges <span class="text-white">$25/month + $10 per project</span>.</p>
+    <div class="space-y-6 text-xl text-gray-600 leading-relaxed">
+      <p>Supabase Cloud charges <span class="text-gray-900 font-medium">$25/month + $10 per project</span>.</p>
       <p>3 side projects? That's $55/month.</p>
       <p>5 projects? $75/month.</p>
       <p>10 projects? $125/month.</p>
+      <p class="pt-4">
+        You could self-host. But then you're on the hook for upgrades, backups, security, and debugging 12 Docker containers at 2am.
+      </p>
+      <p class="text-gray-900 font-medium pt-4">
+        Most devs pick one: pay Supabase, or suffer.
+      </p>
     </div>
-
-    <p class="mt-6 text-gray-400">
-      You could self-host. But then you're on the hook for upgrades, backups, security, and debugging 12 Docker containers at 2am.
-    </p>
-
-    <p class="mt-4 text-white font-medium">
-      Most devs pick one: pay Supabase, or suffer.
-    </p>
   </section>
 
   <!-- Solution -->
-  <section class="max-w-3xl mx-auto px-6 py-16 border-t border-gray-800">
-    <h2 class="text-2xl font-bold mb-6">The fix</h2>
+  <section class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
+    <h2 class="text-4xl font-bold mb-10">How it works</h2>
 
-    <div class="space-y-6">
+    <div class="space-y-12">
       <div>
-        <h3 class="text-lg font-semibold text-supa-green mb-2">You bring a VPS</h3>
-        <p class="text-gray-400">Hetzner, DigitalOcean, whatever. $7-14/month gets you plenty of RAM for multiple instances.</p>
+        <h3 class="text-2xl font-bold text-emerald-600 mb-3">You bring a VPS</h3>
+        <p class="text-xl text-gray-600 leading-relaxed">Hetzner, DigitalOcean, whatever. $7-14/month gets you plenty of RAM for multiple instances.</p>
       </div>
 
       <div>
-        <h3 class="text-lg font-semibold text-supa-green mb-2">We deploy Supabase</h3>
-        <p class="text-gray-400">Full stack: Postgres, Auth, Realtime, Storage, Studio. Properly configured, secrets generated.</p>
+        <h3 class="text-2xl font-bold text-emerald-600 mb-3">We deploy Supabase</h3>
+        <p class="text-xl text-gray-600 leading-relaxed">Full stack: Postgres, Auth, Realtime, Storage, Studio. Properly configured, secrets generated.</p>
       </div>
 
       <div>
-        <h3 class="text-lg font-semibold text-supa-green mb-2">We handle the scary parts</h3>
-        <p class="text-gray-400">Automated hourly backups. Zero-downtime upgrades with rollback. Monitoring and alerts.</p>
+        <h3 class="text-2xl font-bold text-emerald-600 mb-3">We handle the scary parts</h3>
+        <p class="text-xl text-gray-600 leading-relaxed">Automated hourly backups. Zero-downtime upgrades with rollback. Monitoring and alerts.</p>
       </div>
 
       <div>
-        <h3 class="text-lg font-semibold text-supa-green mb-2">We're here when things break</h3>
-        <p class="text-gray-400">AI-assisted support + human escalation. We know Supabase internals.</p>
+        <h3 class="text-2xl font-bold text-emerald-600 mb-3">We're here when things break</h3>
+        <p class="text-xl text-gray-600 leading-relaxed">Chat support when you need it. We know Supabase internals.</p>
       </div>
     </div>
   </section>
 
   <!-- Pricing -->
-  <section id="pricing" class="max-w-3xl mx-auto px-6 py-16 border-t border-gray-800">
-    <h2 class="text-2xl font-bold mb-6">Pricing</h2>
+  <section id="pricing" class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
+    <h2 class="text-4xl font-bold mb-10">Pricing</h2>
 
-    <div class="bg-gray-900 border border-gray-800 rounded-lg p-8">
-      <div class="flex items-baseline gap-2 mb-4">
-        <span class="text-4xl font-bold">$25</span>
-        <span class="text-gray-500">/month</span>
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-10 max-w-xl">
+      <div class="flex items-baseline gap-2 mb-6">
+        <span class="text-5xl font-bold">$25</span>
+        <span class="text-xl text-gray-500">/month</span>
       </div>
 
-      <ul class="space-y-3 text-gray-400 mb-8">
-        <li class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-supa-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <ul class="space-y-4 text-lg text-gray-600 mb-8">
+        <li class="flex items-center gap-3">
+          <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
           </svg>
           Unlimited Supabase instances
         </li>
-        <li class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-supa-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <li class="flex items-center gap-3">
+          <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
           </svg>
           Automated hourly backups
         </li>
-        <li class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-supa-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <li class="flex items-center gap-3">
+          <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
           </svg>
           Managed upgrades with rollback
         </li>
-        <li class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-supa-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <li class="flex items-center gap-3">
+          <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
           </svg>
           Chat support
         </li>
+        <li class="flex items-center gap-3">
+          <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          7-day free trial
+        </li>
       </ul>
 
-      <p class="text-sm text-gray-500">
+      <p class="text-base text-gray-500">
         You pay for your own VPS (~$7-14/month on Hetzner).<br>
         Total cost: ~$32-39/month for unlimited instances.
       </p>
     </div>
 
-    <div class="mt-8 text-gray-500">
-      <p class="font-medium text-white mb-2">Compare to Supabase Cloud:</p>
-      <table class="w-full text-left">
+    <div class="mt-12">
+      <h3 class="text-xl font-bold mb-6">Compare to Supabase Cloud</h3>
+      <table class="w-full max-w-xl text-left text-lg">
         <thead>
-          <tr class="border-b border-gray-800">
-            <th class="py-2">Projects</th>
-            <th class="py-2">Supabase Cloud</th>
-            <th class="py-2 text-supa-green">Supabyoi</th>
+          <tr class="border-b border-gray-200">
+            <th class="py-3 font-semibold">Projects</th>
+            <th class="py-3 font-semibold">Supabase Cloud</th>
+            <th class="py-3 font-semibold text-emerald-600">Supabyoi</th>
           </tr>
         </thead>
-        <tbody class="text-gray-400">
-          <tr class="border-b border-gray-800">
-            <td class="py-2">3</td>
-            <td class="py-2">$55/mo</td>
-            <td class="py-2 text-supa-green">~$35/mo</td>
+        <tbody class="text-gray-600">
+          <tr class="border-b border-gray-200">
+            <td class="py-3">3</td>
+            <td class="py-3">$55/mo</td>
+            <td class="py-3 text-emerald-600 font-medium">~$35/mo</td>
           </tr>
-          <tr class="border-b border-gray-800">
-            <td class="py-2">5</td>
-            <td class="py-2">$75/mo</td>
-            <td class="py-2 text-supa-green">~$35/mo</td>
+          <tr class="border-b border-gray-200">
+            <td class="py-3">5</td>
+            <td class="py-3">$75/mo</td>
+            <td class="py-3 text-emerald-600 font-medium">~$35/mo</td>
           </tr>
           <tr>
-            <td class="py-2">10</td>
-            <td class="py-2">$125/mo</td>
-            <td class="py-2 text-supa-green">~$40/mo</td>
+            <td class="py-3">10</td>
+            <td class="py-3">$125/mo</td>
+            <td class="py-3 text-emerald-600 font-medium">~$40/mo</td>
           </tr>
         </tbody>
       </table>
@@ -158,21 +168,21 @@
   </section>
 
   <!-- Waitlist -->
-  <section id="waitlist" class="max-w-3xl mx-auto px-6 py-16 border-t border-gray-800">
-    <h2 class="text-2xl font-bold mb-4">Join the beta</h2>
-    <p class="text-gray-400 mb-6">Limited spots. First 10 customers get 50% off for life.</p>
+  <section id="waitlist" class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
+    <h2 class="text-4xl font-bold mb-4">Join the beta</h2>
+    <p class="text-xl text-gray-600 mb-8">Limited spots. First 10 customers get 50% off for life.</p>
 
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col sm:flex-row gap-4">
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl">
       <input
         type="email"
         name="email"
         placeholder="you@example.com"
         required
-        class="flex-1 px-4 py-3 bg-gray-900 border border-gray-700 rounded focus:outline-none focus:border-supa-green"
+        class="flex-1 px-5 py-4 text-lg bg-white border border-gray-300 rounded focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
       >
       <button
         type="submit"
-        class="px-8 py-3 bg-supa-green text-black font-semibold rounded hover:bg-green-400 transition"
+        class="px-8 py-4 bg-emerald-500 text-white text-lg font-semibold rounded hover:bg-emerald-600 transition"
       >
         Get early access
       </button>
@@ -180,45 +190,45 @@
   </section>
 
   <!-- FAQ -->
-  <section class="max-w-3xl mx-auto px-6 py-16 border-t border-gray-800">
-    <h2 class="text-2xl font-bold mb-8">FAQ</h2>
+  <section id="faq" class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
+    <h2 class="text-4xl font-bold mb-12">FAQ</h2>
 
-    <div class="space-y-8">
+    <div class="space-y-10">
       <div>
-        <h3 class="font-semibold mb-2">What VPS specs do I need?</h3>
-        <p class="text-gray-400">4GB RAM for 1 instance, 8GB for 2-3, 16GB for 4-6. Hetzner CX22 ($4/mo) works for a single instance.</p>
+        <h3 class="text-xl font-bold mb-3">What VPS specs do I need?</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">4GB RAM for 1 instance, 8GB for 2-3, 16GB for 4-6. Hetzner CX22 ($4/mo) works for a single instance.</p>
       </div>
 
       <div>
-        <h3 class="font-semibold mb-2">How do backups work?</h3>
-        <p class="text-gray-400">Hourly pg_dump to your S3/R2 bucket. You own your backups. We monitor and alert on failures.</p>
+        <h3 class="text-xl font-bold mb-3">How do backups work?</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">Hourly pg_dump to your S3/R2 bucket. You own your backups. We monitor and alert on failures.</p>
       </div>
 
       <div>
-        <h3 class="font-semibold mb-2">How do upgrades work?</h3>
-        <p class="text-gray-400">We track Supabase releases, test upgrades first, then push to your instance with automatic rollback if health checks fail.</p>
+        <h3 class="text-xl font-bold mb-3">How do upgrades work?</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">We track Supabase releases, test upgrades first, then push to your instance with automatic rollback if health checks fail.</p>
       </div>
 
       <div>
-        <h3 class="font-semibold mb-2">What if something breaks?</h3>
-        <p class="text-gray-400">Chat support with AI assistance for common issues. Human escalation for complex problems. We SSH in and fix it.</p>
+        <h3 class="text-xl font-bold mb-3">What if something breaks?</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">Chat support for common issues. We SSH in and fix it when needed.</p>
       </div>
 
       <div>
-        <h3 class="font-semibold mb-2">Do you have access to my data?</h3>
-        <p class="text-gray-400">We have SSH access to manage Supabase, but your data stays on your VPS. Backups go to your bucket. We don't copy or access your application data.</p>
+        <h3 class="text-xl font-bold mb-3">Do you have access to my data?</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">We have SSH access to manage Supabase, but your data stays on your VPS. Backups go to your bucket. We don't copy or access your application data.</p>
       </div>
 
       <div>
-        <h3 class="font-semibold mb-2">What's included in Supabase self-hosted?</h3>
-        <p class="text-gray-400">Postgres, Auth (GoTrue), Realtime, Storage, PostgREST, Kong gateway, and Studio dashboard. Edge Functions available on request (runs on your VPS, not globally distributed).</p>
+        <h3 class="text-xl font-bold mb-3">What's included?</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">Postgres, Auth (GoTrue), Realtime, Storage, PostgREST, Kong gateway, and Studio dashboard. Edge Functions available on request.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="max-w-3xl mx-auto px-6 py-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-    <p>Built by <a href="https://lakshminp.com" class="text-gray-400 hover:text-white">Lakshmi Narasimhan</a></p>
+  <footer class="max-w-4xl mx-auto px-6 py-10 border-t border-gray-200 text-center">
+    <p class="text-base text-gray-500">Built by <a href="https://lakshminp.com" class="text-gray-700 hover:text-gray-900 underline">Lakshmi Narasimhan</a></p>
   </footer>
 
 </body>
