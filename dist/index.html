@@ -6,74 +6,6 @@
   <title>Supabyoi - Self-hosted Supabase without the headaches</title>
   <meta name="description" content="$25/month. Unlimited Supabase instances. You bring the VM, we handle upgrades, backups, and support.">
   <link rel="stylesheet" href="output.css">
-    <style>
-        /* ConvertKit form overrides */
-        .ck-wrapper .formkit-form {
-            background: transparent !important;
-            border: none !important;
-            padding: 0 !important;
-        }
-        .ck-wrapper .formkit-form [data-style="clean"] {
-            padding: 0 !important;
-        }
-        .ck-wrapper .formkit-fields {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        @media (min-width: 640px) {
-            .ck-wrapper .formkit-fields {
-                flex-direction: row;
-            }
-        }
-        .ck-wrapper .formkit-field {
-            flex: 1;
-            margin: 0 !important;
-        }
-        .ck-wrapper .formkit-submit {
-            margin: 0 !important;
-        }
-        .ck-wrapper .formkit-input {
-            width: 100% !important;
-            padding: 1rem 1.25rem !important;
-            font-size: 1.125rem !important;
-            background: #ffffff !important;
-            border: 1px solid #d1d5db !important;
-            border-radius: 0.375rem !important;
-            color: #111827 !important;
-        }
-        .ck-wrapper .formkit-input::placeholder {
-            color: #9ca3af !important;
-        }
-        .ck-wrapper .formkit-input:focus {
-            outline: none !important;
-            border-color: #10b981 !important;
-            box-shadow: 0 0 0 1px #10b981 !important;
-        }
-        .ck-wrapper .formkit-submit span {
-            display: block !important;
-            padding: 1rem 2rem !important;
-            background: #10b981 !important;
-            color: white !important;
-            font-size: 1.125rem !important;
-            font-weight: 600 !important;
-            border-radius: 0.375rem !important;
-            transition: background 0.2s !important;
-        }
-        .ck-wrapper .formkit-submit:hover span {
-            background: #059669 !important;
-        }
-        .ck-wrapper .formkit-alert,
-        .ck-wrapper .formkit-alert-success {
-            background: transparent !important;
-            color: #10b981 !important;
-            padding: 1rem 0 !important;
-        }
-        .ck-wrapper .formkit-powered-by-convertkit-container,
-        .ck-wrapper .formkit-guarantee {
-            display: none !important;
-        }
-    </style>
 </head>
 <body class="bg-white text-gray-900 min-h-screen">
 
@@ -84,7 +16,8 @@
       <div class="flex items-center gap-6 text-base">
         <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
         <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
-        <a href="#waitlist" class="bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-600 transition">Join Beta</a>
+        <a href="https://app.supabyoi.com/login" class="text-gray-600 hover:text-gray-900">Log in</a>
+        <a href="https://app.supabyoi.com/signup" class="bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-600 transition">Sign Up Free</a>
       </div>
     </nav>
   </header>
@@ -105,9 +38,10 @@
       <p class="text-xl text-gray-500">Unlimited instances. No per-project fees.</p>
     </div>
 
-    <a href="#waitlist" class="inline-block bg-emerald-500 text-white text-lg font-semibold px-8 py-4 rounded hover:bg-emerald-600 transition">
-      Join the beta
+    <a href="https://app.supabyoi.com/signup" class="inline-block bg-emerald-500 text-white text-lg font-semibold px-8 py-4 rounded hover:bg-emerald-600 transition">
+      Sign up free &rarr;
     </a>
+    <p class="mt-3 text-base text-gray-500">No credit card required.</p>
   </main>
 
   <!-- Problem -->
@@ -235,14 +169,13 @@
     </div>
   </section>
 
-  <!-- Waitlist -->
-  <section id="waitlist" class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
-    <h2 class="text-4xl font-bold mb-4">Join the beta</h2>
-    <p class="text-xl text-gray-600 mb-8">Limited spots. First 10 customers get 50% off for life.</p>
-
-    <div class="max-w-xl ck-wrapper">
-      <script async data-uid="f1fa810d08" src="https://cheerful-musician-8162.kit.com/f1fa810d08/index.js"></script>
-    </div>
+  <!-- CTA -->
+  <section class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200 text-center">
+    <h2 class="text-4xl font-bold mb-4">Ready to get started?</h2>
+    <p class="text-xl text-gray-600 mb-8">Sign up in 30 seconds. No credit card required.</p>
+    <a href="https://app.supabyoi.com/signup" class="inline-block bg-emerald-500 text-white text-lg font-semibold px-8 py-4 rounded hover:bg-emerald-600 transition">
+      Sign up free &rarr;
+    </a>
   </section>
 
   <!-- FAQ -->
