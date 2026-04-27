@@ -90,7 +90,7 @@
 
       <div>
         <h3 class="text-2xl font-bold text-emerald-600 mb-3">We handle the scary parts</h3>
-        <p class="text-xl text-gray-600 leading-relaxed">Managed backups. Zero-downtime upgrades with rollback. Monitoring and alerts.</p>
+        <p class="text-xl text-gray-600 leading-relaxed">Managed backups and on-demand restores. Zero-downtime upgrades with rollback. Monitoring and alerts.</p>
       </div>
 
       <div>
@@ -126,7 +126,7 @@
           <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
           </svg>
-          Managed backups
+          Managed backups + on-demand restores
         </li>
         <li class="flex items-center gap-3">
           <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -182,6 +182,9 @@
           </tr>
         </tbody>
       </table>
+      <p class="text-base text-gray-500 mt-6 max-w-xl leading-relaxed">
+        Comparing to free tier? Supabase free pauses projects after a week of inactivity, caps at 500MB per project, has no daily backups, and shares throttled compute. Supabyoi has none of those limits.
+      </p>
     </div>
   </section>
 
@@ -205,13 +208,18 @@
       </div>
 
       <div>
-        <h3 class="text-xl font-bold mb-3">How do backups work?</h3>
-        <p class="text-lg text-gray-600 leading-relaxed">We handle backups for you — no S3 bucket or external storage needed. Backups run automatically and we monitor and alert on failures.</p>
+        <h3 class="text-xl font-bold mb-3">How do backups and restores work?</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">Backups run nightly, encrypted and stored off-box — no S3 bucket of your own to set up. The part most self-hosted setups skip is the restore: if you ever need one (bad migration, accidental DELETE, hardware failure), we run the recovery for you. You don't need to write or test the restore path yourself.</p>
       </div>
 
       <div>
         <h3 class="text-xl font-bold mb-3">How do upgrades work?</h3>
         <p class="text-lg text-gray-600 leading-relaxed">We track Supabase releases, test upgrades first, then push to your instance with automatic rollback if health checks fail.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3">Why not just use Coolify or the Railway Supabase template?</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">Those are great if you want to learn the ops. They get you a single Supabase stack on a VPS. After that you're on the hook for the parts that bite later — Postgres and image upgrades (typically an hour each, several times a year), a restore path you've actually tested, and the day the control plane auto-updates something it shouldn't. Most templates also run one project per VM. Supabyoi handles upgrades and restores for you, runs unlimited instances on one box, and doesn't surprise-update your stack at 3am.</p>
       </div>
 
       <div>
