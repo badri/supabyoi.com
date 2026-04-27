@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Rebuild Tailwind CSS whenever an HTML file in dist/ is being committed.
+# Without this, new utility classes added to the HTML aren't in the
+# compiled CSS and the browser silently drops them.
+
+set -e
+
+if ! git diff --cached --name-only | grep -q "^dist/.*\.html$"; then
+  exit 0
+fi
+
+if [ ! -x node_modules/.bin/tailwindcss ]; then
+  echo "pre-commit: node_modules missing. Run: npm install" >&2
+  exit 1
+fi
+
+echo "pre-commit: HTML changed in dist/ — rebuilding Tailwind CSS"
+npm run build --silent
+git add dist/output.css

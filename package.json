@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "prepare": "git config core.hooksPath .githooks 2>/dev/null || true"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.0"
