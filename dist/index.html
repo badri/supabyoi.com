@@ -24,23 +24,23 @@
     <nav class="flex items-center justify-between">
       <span class="text-xl font-bold">supabyoi</span>
       <div class="flex items-center gap-6 text-base">
-        <a href="https://docs.supabyoi.com/" class="text-gray-600 hover:text-gray-900">Docs</a>
-        <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
-        <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
-        <a href="https://app.supabyoi.com/login" class="text-gray-600 hover:text-gray-900">Log in</a>
+        <a href="https://docs.supabyoi.com/" class="hidden md:inline text-gray-600 hover:text-gray-900">Docs</a>
+        <a href="#pricing" class="hidden md:inline text-gray-600 hover:text-gray-900">Pricing</a>
+        <a href="#faq" class="hidden md:inline text-gray-600 hover:text-gray-900">FAQ</a>
+        <a href="https://app.supabyoi.com/login" class="hidden md:inline text-gray-600 hover:text-gray-900">Log in</a>
         <a href="https://app.supabyoi.com/signup" class="bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-600 transition">Sign Up Free</a>
       </div>
     </nav>
   </header>
 
   <!-- Hero -->
-  <main class="max-w-4xl mx-auto px-6 py-20">
-    <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-8">
+  <main class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
       Self-hosted Supabase.<br>
       <span class="text-emerald-500">Without the headaches.</span>
     </h1>
 
-    <p class="text-2xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
+    <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
       You bring your VPS. We deploy Supabase, handle upgrades, and manage backups.
     </p>
 
@@ -56,7 +56,7 @@
   </main>
 
   <!-- Problem -->
-  <section class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
+  <section class="max-w-4xl mx-auto px-6 py-12 md:py-20 border-t border-gray-200">
     <h2 class="text-4xl font-bold mb-10">The problem</h2>
 
     <div class="space-y-6 text-xl text-gray-600 leading-relaxed">
@@ -74,7 +74,7 @@
   </section>
 
   <!-- Solution -->
-  <section class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
+  <section class="max-w-4xl mx-auto px-6 py-12 md:py-20 border-t border-gray-200">
     <h2 class="text-4xl font-bold mb-10">How it works</h2>
 
     <div class="space-y-12">
@@ -106,10 +106,10 @@
   </section>
 
   <!-- Pricing -->
-  <section id="pricing" class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
+  <section id="pricing" class="max-w-4xl mx-auto px-6 py-12 md:py-20 border-t border-gray-200">
     <h2 class="text-4xl font-bold mb-10">Pricing</h2>
 
-    <div class="bg-gray-50 border border-gray-200 rounded-lg p-10 max-w-xl">
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 md:p-10 max-w-xl">
       <div class="flex items-baseline gap-2 mb-6">
         <span class="text-5xl font-bold">$25</span>
         <span class="text-xl text-gray-500">/month</span>
@@ -156,6 +156,7 @@
 
     <div class="mt-12">
       <h3 class="text-xl font-bold mb-6">Compare to Supabase Cloud</h3>
+      <div class="overflow-x-auto">
       <table class="w-full max-w-xl text-left text-lg">
         <thead>
           <tr class="border-b border-gray-200">
@@ -182,6 +183,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
       <p class="text-base text-gray-500 mt-6 max-w-xl leading-relaxed">
         Comparing to free tier? Supabase free pauses projects after a week of inactivity, caps at 500MB per project, has no daily backups, and shares throttled compute. Supabyoi has none of those limits.
       </p>
@@ -189,7 +191,7 @@
   </section>
 
   <!-- CTA -->
-  <section class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200 text-center">
+  <section class="max-w-4xl mx-auto px-6 py-12 md:py-20 border-t border-gray-200 text-center">
     <h2 class="text-4xl font-bold mb-4">Ready to get started?</h2>
     <p class="text-xl text-gray-600 mb-8">Sign up in 30 seconds. No credit card required.</p>
     <a href="https://app.supabyoi.com/signup" class="inline-block bg-emerald-500 text-white text-lg font-semibold px-8 py-4 rounded hover:bg-emerald-600 transition">
@@ -198,7 +200,7 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-200">
+  <section id="faq" class="max-w-4xl mx-auto px-6 py-12 md:py-20 border-t border-gray-200">
     <h2 class="text-4xl font-bold mb-12">FAQ</h2>
 
     <div class="space-y-10">
