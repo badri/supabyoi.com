@@ -60,15 +60,17 @@
     <h2 class="text-4xl font-bold mb-10">The problem</h2>
 
     <div class="space-y-6 text-xl text-gray-600 leading-relaxed">
-      <p>Supabase Cloud charges <span class="text-gray-900 font-medium">$25/month + $10 per project</span>.</p>
-      <p>3 side projects? That's $55/month.</p>
-      <p>5 projects? $75/month.</p>
-      <p>10 projects? $125/month.</p>
+      <p>Supabase Cloud is good. <span class="text-gray-900 font-medium">It's also not yours — and the bill scales with everything you do.</span></p>
+      <p>Four things bite:</p>
+      <p><span class="text-gray-900 font-medium">Cost compounds.</span> $25/org base. +$10/mo per project on the smallest compute. More for bigger boxes. Plus egress. Plus storage. Plus auth at scale (people hit a real cliff at 50K+ MAU). Multi-project shops watch the line item climb every month.</p>
+      <p><span class="text-gray-900 font-medium">Predictability dies.</span> Compute scales. Egress scales. Storage scales. The bill scales. The month you ship is the month you find out.</p>
+      <p><span class="text-gray-900 font-medium">Sovereignty.</span> Compliance, data residency, "no third-party SaaS" policies — none of these care that the API is great.</p>
+      <p><span class="text-gray-900 font-medium">Lock-in.</span> Price changes, term changes, pivots, acquisitions. Your data is on their roadmap, not yours.</p>
       <p class="pt-4">
-        You could self-host. But then you're on the hook for upgrades, backups, security, and debugging 12 Docker containers at 2am.
+        You could self-host. But then you own the upgrade tax, the backup tax, the security tax, and the 2am-Docker-debugging tax.
       </p>
       <p class="text-gray-900 font-medium pt-4">
-        Most devs pick one: pay Supabase, or suffer.
+        Most devs pick one: rent Supabase, or run it yourself and bleed time.
       </p>
     </div>
   </section>
@@ -91,6 +93,11 @@
       <div>
         <h3 class="text-2xl font-bold text-emerald-600 mb-3">We handle the scary parts</h3>
         <p class="text-xl text-gray-600 leading-relaxed">Managed backups and on-demand restores. Zero-downtime upgrades with rollback. Monitoring and alerts.</p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-bold text-emerald-600 mb-3">You pick the compute. We don't meter it.</h3>
+        <p class="text-xl text-gray-600 leading-relaxed">Run on a $7 Hetzner box for hobby projects. Resize the same box to $25 or $80 when you grow — your VPS provider handles the resize, our fee stays $25/month. No compute tier on our side, no egress overage, no storage overage. Your bill doesn't jump because you shipped.</p>
       </div>
 
       <div>
